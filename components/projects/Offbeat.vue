@@ -3,7 +3,7 @@ const parsedTodos = ref();
 const debug = false;
 const client = useSupabaseClient();
 const config = useRuntimeConfig();
-const { data: todos } = await useLazyAsyncData('portfolio', async () => {
+const { data: todos } = await useLazyAsyncData('projects', async () => {
   const { data } = await client.from('todos').select('*');
   return data;
 });

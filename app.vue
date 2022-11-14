@@ -1,6 +1,7 @@
 <template>
   <HeaderOffbeat />
   <ProjectsOffbeat />
+  <SliderOffbeat />
 </template>
 <style>
 html {
