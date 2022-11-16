@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>offbeatDev : Paulo Guerra F. // portfolio</Title>
+    <Title>offbeatDev // portfolio by paulo guerra f.</Title>
   </Head>
   <HeaderOffbeat />
   <ProjectsOffbeat />
