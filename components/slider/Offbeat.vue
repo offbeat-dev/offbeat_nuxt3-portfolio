@@ -30,19 +30,23 @@ const onAutoplayPlaying = (splide, rate) => {
       perPage: 1,
       height: '50vh',
       fixedWidth: '50vh',
+      pagination: false,
+      arrows: false,
+      cover: true,
     }"
   >
     <SplideSlide>
-      <img src="https://source.unsplash.com/fIq0tET6llw" alt="Sample 1" />
+      <CardOffbeat />
+      <!-- <img src="https://source.unsplash.com/fIq0tET6llw" alt="Sample 1" /> -->
     </SplideSlide>
     <SplideSlide>
-      <img src="https://source.unsplash.com/G85VuTpw6jg" alt="Sample 2" />
+      <CardOffbeat />
     </SplideSlide>
     <SplideSlide>
-      <img src="https://source.unsplash.com/fbAnIjhrOL4" alt="Sample 3" />
+      <CardOffbeat />
     </SplideSlide>
     <SplideSlide>
-      <img src="https://source.unsplash.com/hpTH5b6mo2s" alt="Sample 4" />
+      <CardOffbeat />
     </SplideSlide>
   </Splide>
 </template>
