@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+
 const onMove = (splide) => {
   const { Layout, Move, Direction, Controller } = splide.Components;
   const end = splide.Components.Controller.getEnd() + 1;
   const rate = Math.min((splide.index + 1) / end, 1);
 };
+
 const onDragging = (splide) => {
   const { Layout, Move, Direction, Controller } = splide.Components;
   const position = Direction.orient(Move.getPosition());
@@ -24,15 +27,15 @@ const onAutoplayPlaying = (splide, rate) => {
     @splide:dragging="onDragging"
     @splide:move="onMove"
     :options="{
-      autoplay: false,
+      autoplay: true,
       type: 'loop',
+      perPage: 4,
       gap: 20,
-      perPage: 1,
-      height: '50vh',
-      fixedWidth: '50vh',
       pagination: false,
       arrows: false,
-      cover: true,
+    }"
+    :extensions="{
+      AutoScroll,
     }"
   >
     <SplideSlide>
@@ -50,7 +53,10 @@ const onAutoplayPlaying = (splide, rate) => {
     </SplideSlide>
   </Splide>
 </template>
-<style>
+<style scoped>
+.splide__slide {
+  max-width: 400px;
+}
 .splide__slide img {
   width: 100%;
   height: 100%;

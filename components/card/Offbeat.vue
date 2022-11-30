@@ -11,10 +11,6 @@
   --border-size: 2px;
   --card-color: #fff;
   --card-border-color: #ddd;
-
-  margin: 50px;
-  width: 400px;
-  height: 300px;
   backdrop-filter: blur(29px);
   background: conic-gradient(
     from var(--angle-rot),
@@ -29,7 +25,7 @@
 }
 
 .rainbow {
-  width: 400px;
+  width: 100%;
   height: 300px;
   cursor: pointer;
   border-radius: 20px;
