@@ -27,12 +27,11 @@ const onAutoplayPlaying = (splide, rate) => {
     @splide:dragging="onDragging"
     @splide:move="onMove"
     :options="{
-      autoplay: true,
       type: 'loop',
-      perPage: 4,
       gap: 20,
       pagination: false,
       arrows: false,
+      perPage: 4,
     }"
     :extensions="{
       AutoScroll,

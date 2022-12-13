@@ -64,49 +64,49 @@
 }
 
 /* Animate when Houdini is available */
-@supports (background: paint(houdini)) {
-  @property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
-  @property --angle-rot {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
+/* @supports (background: paint(houdini)) { */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@property --angle-rot {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
-  @keyframes rotateDeg {
-    0% {
-      --angle-rot: 0deg;
-    }
-    100% {
-      --angle-rot: 360deg;
-    }
+@keyframes rotateDeg {
+  0% {
+    --angle-rot: 0deg;
   }
-
-  @keyframes rotateOut {
-    0% {
-      --angle: 360deg;
-    }
-    50% {
-      --angle: 180deg;
-    }
-    100% {
-      --angle: 0deg;
-    }
-  }
-
-  @keyframes rotateIn {
-    0% {
-      --angle: 0deg;
-    }
-    50% {
-      --angle: 180deg;
-    }
-    100% {
-      --angle: 360deg;
-    }
+  100% {
+    --angle-rot: 360deg;
   }
 }
+
+@keyframes rotateOut {
+  0% {
+    --angle: 360deg;
+  }
+  50% {
+    --angle: 180deg;
+  }
+  100% {
+    --angle: 0deg;
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    --angle: 0deg;
+  }
+  50% {
+    --angle: 180deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+/* } */
 </style>

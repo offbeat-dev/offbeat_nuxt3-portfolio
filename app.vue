@@ -3,6 +3,8 @@
     <Head>
       <Title>offbeatDev // portfolio by paulo guerra f.</Title>
     </Head>
+    <CardOffbeat />
+
     <HeaderOffbeat />
     <ProjectsOffbeat />
     <SliderOffbeat />
